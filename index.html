@@ -34,7 +34,7 @@
     <script>
         async function fetchTAOValue() {
             try {
-                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=lamden&vs_currencies=eur');
+                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bittensor&vs_currencies=eur');
                 const data = await response.json();
                 const taoValue = data.lamden.eur;
                 document.getElementById('value').innerText = `${taoValue} EUR`;
